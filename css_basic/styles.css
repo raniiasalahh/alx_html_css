@@ -3,6 +3,8 @@ body {
   flex-direction: column; 
   height: 100vh; 
   margin: 0; 
+  font-family: Arial, sans-serif; 
+  background-color: #f0f0f0;
 }
 
 main {
@@ -15,18 +17,34 @@ main {
 article {
   flex: 2; 
   overflow-y: auto; 
+  background-color: #fff; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 aside {
   flex: 1; 
   overflow-y: auto; 
+  background-color: #f8f9fa; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 
 header, footer {
-  background-color: #f8f9fa; 
+  background-color: #007BFF; 
+  color: white; 
   padding: 10px;
   text-align: center;
+}
+
+
+.logo {
+  font-size: 2em; 
+  margin-right: 10px; 
+  vertical-align: middle; 
 }
 
 
@@ -36,6 +54,6 @@ header, footer {
   }
 
   article, aside {
-    flex: 1; 
+    flex: 1; /* Both take full width when stacked */
   }
 }
