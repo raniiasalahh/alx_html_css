@@ -7,7 +7,7 @@ body {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
   flex: auto; 
 }
 
@@ -30,3 +30,12 @@ header, footer {
 }
 
 
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; 
+  }
+
+  article, aside {
+    flex: 1; 
+  }
+}
