@@ -54,6 +54,6 @@ header, footer {
   }
 
   article, aside {
-    flex: 1; /* Both take full width when stacked */
+    flex: 1;
   }
 }
